@@ -1,7 +1,14 @@
 # 4chan Image Downloader
 Have you ever found an interesting thread on 4chan with lots of cool images (memes, nudes, etc) that you wanted to download, but you´re lazy f*** and don´t want to click like a monkey? Well then, fear not to use my image downloader! Simply paste in URL and you´ll get well-organized file structure with ALL files from thread (except bugs, see Issues)
 
-### NOW WITH .PNG AND .JPG SUPPORT
+And you know what´s best?
+__WE SUPPORT EVERY 4CHAN FILE FORMAT!__
+
+Including:
+- jpg
+- png
+- webm
+- gif
 
 # How to use
 You need [Python](https://www.python.org/downloads/) installed
