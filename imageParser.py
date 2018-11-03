@@ -73,6 +73,9 @@ for match in find_word:
     end = newURL.find("/")
     shortURL = newURL[end+1:]
     fileLocation = location + shortURL
+    pngURL = url.replace("jpg", "png")
+    fileLocationPNG = fileLocation.replace("jpg", "png")
+    shortURLpng = shortURL.replace("jpg", "png")
     if(os.path.exists(fileLocation)):
         print("Skipping {} (file already exists)".format(shortURL))
         counter += 1
@@ -88,3 +91,6 @@ for match in find_word:
             except:
                 print("File {} not found, skipping...".format(shortURL))
     counter += 1
+
+#http://boards.4chan.org/b/thread/783944805
+
