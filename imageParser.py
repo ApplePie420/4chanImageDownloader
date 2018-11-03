@@ -72,11 +72,15 @@ for match in find_word:
     newURL = url[20:]
     end = newURL.find("/")
     shortURL = newURL[end+1:]
-    fileLocation = location + shortURL
+    shortURL = shortURL[:-4]
+    fileLocation = location + shortURL + ".jpg"
     pngURL = url.replace("jpg", "png")
+    webmURL = url.replace("jpg", "webm")
+    gifURL = url.replace("jpg", "gif")
     fileLocationPNG = fileLocation.replace("jpg", "png")
-    shortURLpng = shortURL.replace("jpg", "png")
-    if(os.path.exists(fileLocation)):
+    fileLocationWEBM = fileLocation.replace("jpg", "webm")
+    fileLocationGIF = fileLocation.replace("jpg", "gif")
+    if(os.path.exists(fileLocation) or os.path.exists(fileLocationPNG) or os.path.exists(fileLocationWEBM) or os.path.exists(fileLocationGIF)):
         print("Skipping {} (file already exists)".format(shortURL))
         counter += 1
         continue
@@ -89,7 +93,15 @@ for match in find_word:
                 urllib2.urlretrieve(pngURL, fileLocationPNG)
                 print("Downloaded file {} as .png".format(shortURL))
             except:
-                print("File {} not found, skipping...".format(shortURL))
+                try:
+                    urllib2.urlretrieve(webmURL, fileLocationWEBM)
+                    print("Downloaded file {} as .webm".format(shortURL))
+                except:
+                    try:
+                        urllib2.urlretrieve(gifURL, fileLocationGIF)
+                        print("Downloaded file {} as .gif".format(shortURL))
+                    except:
+                        print("File {} not found, skipping...".format(shortURL))
     counter += 1
 
 #http://boards.4chan.org/b/thread/783944805
