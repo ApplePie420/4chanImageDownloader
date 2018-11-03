@@ -28,3 +28,13 @@ You should get folder called _4chanImages_ in folder where *.py file is located,
 # Known Issues
 - Code is awfully bodged so sometimes it creates unnecessary folders or put stuff outside folders. If this happens, open new issue and write : full URL of thread (mainly with thread number and board) and what happened (where were files put etc))
 - Few boards will cause Error 403, but not in regular intervals (maybe request error?)
+
+### Few disclaimers and stuff
+For god´s sake, your own sanity and life of innocent people, please __DONT__ look at the source code. It´s bodged sh!t together, i made it in few hours while i was bored, and i´am not planning to expand it, beautify or do anything with it (unless 4chan changes its storaging strategy and whole thing wont work).
+
+This thing was developed as tool for personal use, thus it doesn´t look like a product neither visually nor by code. 
+
+I also don´t take any responsibilieties for copyright stuff. All images are stored on 4chan.org and belongs to them, this software just download publicly available link to that image. If any problems, contact 4chan.
+
+You can also support this project (which will motivate me to add new features and maybe build an UI) by sending few ETH coins to: 
+`0xe972B42e37E1Be9837851788B527014662F9AF0869`
