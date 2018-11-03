@@ -14,6 +14,8 @@ After hitting enter, console will spit some info on you, you can ignore that if 
 
 You should get folder called _4chanImages_ in folder where *.py file is located, and that file should contain subfolders with names by boards you downloaded from (e.g. "b", "pol" etc). Those folder will contain more subfolders, each with thread number (like "783940220") and this final folder will contain all dem sweet imgaes.
 
+![puller](https://preview.ibb.co/hfQGsf/imagepuller.png)
+
 # Known Issues
 - Sometimes a file on server cannot be found, i have no clue if its bug in my program or some sort of 4chan´s storage optimalization. 
 - Code is awfully bodged so sometimes it creates unnecessary folders or put stuff outside folders. If this happens, open new issue and write : full URL of thread (mainly with thread number and board) and what happened (where were files put etc))
