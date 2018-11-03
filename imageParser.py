@@ -80,8 +80,11 @@ for match in find_word:
     else:
         try:
             urllib2.urlretrieve(url, fileLocation)
-            print("Downloaded file {}".format(shortURL))
+            print("Downloaded file {} as .jpg".format(shortURL))
         except:
-            print("File {} not found, skipping...".format(shortURL))
-            continue
+            try:
+                urllib2.urlretrieve(pngURL, fileLocationPNG)
+                print("Downloaded file {} as .png".format(shortURL))
+            except:
+                print("File {} not found, skipping...".format(shortURL))
     counter += 1
