@@ -8,6 +8,7 @@ location = ""
 if(os.path.isdir("4chanImages") == False):
     os.mkdir("4chanImages")
     print("First run, creating folder [4chanImages]")
+    location += "4chanImages/"
 else:
     location += "4chanImages/"
     
