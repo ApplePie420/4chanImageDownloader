@@ -68,8 +68,8 @@ for match in find_word:
         continue 
     url = "https://" + url
     end = url.find(".jpg")
-    newURL = url[:end-1] + ".jpg"
-    newURL = newURL[20:]
+    url = url[:end-1] + ".jpg"
+    newURL = url[20:]
     end = newURL.find("/")
     shortURL = newURL[end+1:]
     fileLocation = location + shortURL
